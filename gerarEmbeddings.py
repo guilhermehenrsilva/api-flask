@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-chave_secreta = os.getenv('GOOGLE_API_KEY')
+chave_secreta = os.getenv('API_KEY')
 print(chave_secreta)
 generativeai.configure(api_key=chave_secreta)
 csv_url = 'https://docs.google.com/spreadsheets/d/11QU1ibjUAlNKLwLWF1s-kSpRH2UBOiVbLyl1pJIyeSk/export?format=csv&id=11QU1ibjUAlNKLwLWF1s-kSpRH2UBOiVbLyl1pJIyeSk'
