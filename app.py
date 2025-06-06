@@ -60,7 +60,7 @@ def melhorarResposta(inputText):
 
 @app.route("/")
 def home():
-	consulta = "Quem é você?"
+	consulta = "Quem é você ?"
 	resposta = gerarBuscarConsulta(consulta, modeloEmbeddings)
 	prompt = f"Consulta: {consulta} Resposta: {resposta}"
 	response = melhorarResposta(prompt)
