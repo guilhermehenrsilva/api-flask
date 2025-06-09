@@ -8,8 +8,8 @@ load_dotenv()
 chave_secreta = os.getenv('API_KEY')
 print(chave_secreta)
 generativeai.configure(api_key=chave_secreta)
-csv_url = 'https://docs.google.com/spreadsheets/d/11QU1ibjUAlNKLwLWF1s-kSpRH2UBOiVbLyl1pJIyeSk/export?format=csv&id=11QU1ibjUAlNKLwLWF1s-kSpRH2UBOiVbLyl1pJIyeSk'
-df = pd.read_csv(csv_url)
+csv_url = 'https://docs.google.com/spreadsheets/d/1pr9QbEENce-9NFrTtLdrfUd_swzQoOs0FDbShaqMECQ/export?format=csv&id=1pr9QbEENce-9NFrTtLdrfUd_swzQoOs0FDbShaqMECQ'
+
 print(df.head())
 
 model = 'models/gemini-embedding-exp-03-07'
